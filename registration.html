@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<title>Registration</title>
+                <style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password],input[type=number],input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+	</head>
+	
+	<body>
+		<form method="post" action="http://172.16.90.23:81/Chat/phpRegister.php">
+		<!--<center>
+			<table>
+				<tr>
+					<td>First Name: </td>
+					<td><input type="text" name="firstName"></td>
+				</tr>
+				<tr>
+					<td>Last Name: </td>
+					<td><input type="text" name="lastName"></td>
+				</tr>
+				<tr>
+					<td>Mobile Number: </td>
+					<td><input type="text" name="mobileNumber"></td>
+				</tr>
+				<tr>
+					<td>Email Id: </td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td>Username: </td>
+					<td><input type="text" name="userName"></td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td><input type="password" name="reg_pwd"></td>
+				</tr>
+				<tr>
+					<td>Retype Password:  </td>
+					<td><input type="password" name="reg_retype_pwd"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" id="reg" value="Register"></td>
+				</tr>
+			</table>
+		</center>-->
+            
+            <div class="container">
+    <label><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="firstName" required />
+
+    <label><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lastName" required />
+
+    <label><b>Mobile Number</b></label>
+    <input type="number" placeholder="Enter mobile number" name="mobileNumber" required />
+
+    <label><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required />
+
+    <label><b>userName</b></label>
+    <input type="text" placeholder="Enter Username" name="userName" required />
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="reg_pwd" required /> 
+
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Enter Repeat Password" name="reg_retype_pwd" required /> 
+   
+    <button type="submit">Submit</button>
+    <!--<input type="checkbox" checked="checked"> Remember me </input> -->
+  </div>
+            
+		</form>
+	</body>
+</html>
